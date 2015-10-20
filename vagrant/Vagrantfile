@@ -13,4 +13,6 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "../www", "/var/www/sites/house_LED", create: true, type: "nfs"
     config.vm.synced_folder "../db", "/var/db", create: true, type: "nfs"
     config.vm.synced_folder "./config", "/var/custom_config_files", create: true, type: "nfs"
+
+    config.vm.provision :shell, :path => "bootstrap.sh"
 end
