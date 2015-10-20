@@ -11,9 +11,7 @@ Pre-release
 64-bit CPU.
 
 Installation of the following:
-<br>
 Virtualbox - https://www.virtualbox.org/wiki/Downloads
-<br>
 Vagrant - https://www.vagrantup.com/downloads.html
 
 ### Setup ###
@@ -23,4 +21,4 @@ Run "vagrant up" from you command line (ensure vagrant is added to your path)
 
 ### Who do I talk to? ###
 
-For further enquiries contact david.crotty.work@gmail.com
+For further enquiries contact either info@williampreen.me or david.crotty.work@gmail.com
