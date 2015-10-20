@@ -11,9 +11,9 @@ Pre-release
 64-bit CPU.
 
 Installation of the following:
-<br/>
+<br>
 Virtualbox - https://www.virtualbox.org/wiki/Downloads
-<br/>
+<br>
 Vagrant - https://www.vagrantup.com/downloads.html
 
 ### Setup ###
