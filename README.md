@@ -1,29 +1,24 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Web component interface with back-end for sending signals to GPIO's on a raspberry-pi for controlling room lighting.
 
-### What is this repository for? ###
+### Version ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Pre-release
 
-### How do I get set up? ###
+### Prerequisite's ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+64-bit CPU.
 
-### Contribution guidelines ###
+Installation of the following:
+Virtualbox - https://www.virtualbox.org/wiki/Downloads
+Vagrant - https://www.vagrantup.com/downloads.html
 
-* Writing tests
-* Code review
-* Other guidelines
+### Setup ###
+
+Ensure hardware virtualisation is enabled.
+Run "vagrant up" from you command line (ensure vagrant is added to your path)
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+For further enquiries contact david.crotty.work@gmail.com
