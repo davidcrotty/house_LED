@@ -19,6 +19,8 @@ Vagrant - https://www.vagrantup.com/downloads.html
 Ensure hardware virtualisation is enabled.
 Run "vagrant up" from you command line (ensure vagrant is added to your path)
 
+Username/password: vagrant
+
 ### Who do I talk to? ###
 
 For further enquiries contact either info@williampreen.me or david.crotty.work@gmail.com
