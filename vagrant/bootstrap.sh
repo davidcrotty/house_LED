@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get -y install nginx
 
 #Assign permissions to nginx user, make web dir public
-sudo chown -R www-data:www-data /var/www/sites/house_LED
+sudo chown -R www-data:www-data /var/www/sites/house-led.dev
 sudo chmod 755 /var/www
 
 #Add Vhost entries and enable site
