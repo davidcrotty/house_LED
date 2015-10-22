@@ -11,3 +11,6 @@ cp /vagrant/config/house-led.dev /etc/nginx/sites-available/house-led.dev
 rm /etc/nginx/sites-available/default
 sudo ln -s /etc/nginx/sites-available/house-led.dev /etc/nginx/sites-enabled/house-led.dev
 sudo service nginx restart
+
+#Add entry to hosts file
+cp /vagrant/hosts /etc/hosts
