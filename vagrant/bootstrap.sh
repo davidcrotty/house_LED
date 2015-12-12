@@ -2,6 +2,7 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo apt-get -y install python-pip
+sudo apt-get -y install python-virtualenv 
 
 #Assign permissions to nginx user, make web dir public
 sudo chown -R www-data:www-data /var/www/sites/house-led.dev
