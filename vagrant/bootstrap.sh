@@ -13,4 +13,4 @@ sudo ln -s /etc/nginx/sites-available/house-led.dev /etc/nginx/sites-enabled/hou
 sudo service nginx restart
 
 #Add entry to hosts file
-cp /vagrant/hosts /etc/hosts
+cp /vagrant/config/hosts /etc/hosts
