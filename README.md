@@ -16,7 +16,7 @@ Vagrant - https://www.vagrantup.com/downloads.html
 
 ### Setup ###
 
-Ensure hardware virtualisation is enabled.
+Ensure hardware virtualization is enabled.
 Ensure Network bridging is enabled on your VM provider
 Run "vagrant up" from you command line (ensure vagrant is added to your path)
 
