@@ -8,8 +8,8 @@ sudo apt-get -y install python-dev
 
 #Setup software enviroment
 sudo virtualenv /var/www/sites/house-led.dev/house-led
-source /var/www/sites/house-led.dev/house-led/bin/activate
 cd /var/www/sites/house-led.dev/house-led
+source bin/activate
 pip install Django
 pip install uwsgi
 django-admin.py startproject house_led
