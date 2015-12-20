@@ -1,6 +1,6 @@
 #Install software
 sudo apt-get update
-sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools install python-dev
+sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev
 
 #Setup software enviroment
 #sudo virtualenv /var/www/sites/house-led.dev/house-led
