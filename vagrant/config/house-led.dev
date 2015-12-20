@@ -20,18 +20,18 @@ server {
     }
 
     location /media {
-	     root /var/www/sites/house-led.dev/house-led/media;
+	     root /var/www/sites/house-led.dev/house_led/media;
     }
 
    location /static {
-	   root /var/www/sites/house-led.dev/house-led/static;
+	   root /var/www/sites/house-led.dev/house_led/static;
    }
 
    location / {
     	# First attempt to serve request as file, then
     	# as directory, then fall back to displaying a 404.
     	#try_files $uri $uri/ =404;
-    	uwsgi_pass unix:/var/www/sites/house-led.dev/house-led/django.sock;
-    	include /var/www/sites/house-led.dev/house-led/uwsgi_params;
+    	uwsgi_pass unix:/var/www/sites/house-led.dev/house_led/django.sock;
+    	include /var/www/sites/house-led.dev/house_led/uwsgi_params;
    }
 }
