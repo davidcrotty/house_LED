@@ -8,7 +8,10 @@ virtualenv --system-site-packages $VIRTUALENV
 #Important to remember below only works in the CURRENT shell ie: the provision shell
 source $VIRTUALENV/bin/activate
 cd /var/www/sites/house-led.dev
+echo "Virtual env activated"
 pip install -r /var/custom_config_files/requirements.txt
+cp /vagrant/config/house_led.ini /var/www/sites/house-led.dev/
+echo "Copied ini"
 #source /var/www/sites/house-led.dev/bin/activate
 #pip install Django
 #pip install uwsgi
@@ -18,8 +21,12 @@ pip install -r /var/custom_config_files/requirements.txt
 #Assign permissions to nginx user, make web dir public
 sudo chown -R www-data:www-data /var/www/sites/house-led.dev
 sudo chmod 755 /var/www
+echo "Activating uwsgi"
+mkdir /var/log/uwsgi
+uwsgi --ini house_led.ini
 
 #Add Vhost entries and enable site
+echo "Resolving web server configs"
 cp /vagrant/config/house-led.dev /etc/nginx/sites-available/house-led.dev
 rm /etc/nginx/sites-available/default
 sudo ln -s /etc/nginx/sites-available/house-led.dev /etc/nginx/sites-enabled/house-led.dev
