@@ -3,9 +3,11 @@ sudo apt-get update
 sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev
 
 #Setup software enviroment
-#sudo virtualenv /var/www/sites/house-led.dev/house-led
-#cd /var/www/sites/house-led.dev/house-led
-#source bin/activate
+virtualenv /var/www/sites/house-led.dev/
+echo "virtual enviroment created"
+cd /var/www/sites/house-led.dev
+source bin/activate
+echo "activated virtual env"
 #pip install Django
 #pip install uwsgi
 #django-admin.py startproject house_led
