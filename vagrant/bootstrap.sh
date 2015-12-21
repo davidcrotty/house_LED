@@ -10,13 +10,6 @@ source $VIRTUALENV/bin/activate
 cd /var/www/sites/house-led.dev
 echo "Virtual env activated"
 pip install -r /var/custom_config_files/requirements.txt
-cp /vagrant/config/house_led.ini /var/www/sites/house-led.dev/
-echo "Copied ini"
-#source /var/www/sites/house-led.dev/bin/activate
-#pip install Django
-#pip install uwsgi
-#django-admin.py startproject house_led
-#cd house_led
 
 #Assign permissions to nginx user, make web dir public
 sudo chown -R www-data:www-data /var/www/sites/house-led.dev
