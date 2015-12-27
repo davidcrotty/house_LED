@@ -2,6 +2,9 @@
 sudo apt-get update
 sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev
 
+#Create remote dirs
+mkdir /var/log/uwsgi
+
 #Setup software enviroment
 export VIRTUALENV=/var/www/sites/house-led.dev
 virtualenv --system-site-packages $VIRTUALENV
@@ -15,8 +18,9 @@ pip install -r /var/custom_config_files/requirements.txt
 sudo chown -R www-data:www-data /var/www/sites/house-led.dev
 sudo chmod 755 /var/www
 echo "Activating uwsgi"
-mkdir /var/log/uwsgi
-uwsgi --ini house_led.ini
+#uwsgi --ini house_led.ini
+sudo pip install uwsgi
+uwsgi --ini /var/www/sites/house-led.dev/house_led.ini
 
 #Add Vhost entries and enable site
 echo "Resolving web server configs"
