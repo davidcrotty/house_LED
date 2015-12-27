@@ -22,6 +22,11 @@ Run "vagrant up" from you command line (ensure vagrant is added to your path)
 
 Username/password: vagrant
 
+### Development ###
+
+The project uses uwsgi and is configured for touch reload to view your code changes in:
+/var/www/sites/house-led.dev/house_led/house_led/settings.py
+
 ### Who do I talk to? ###
 
 For further enquiries contact either info@williampreen.me or david.crotty.work@gmail.com
