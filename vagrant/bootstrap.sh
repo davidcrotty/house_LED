@@ -4,6 +4,7 @@ sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools pyt
 
 #Create remote dirs
 mkdir /var/log/uwsgi
+mkdir /var/log/uwsgi/vassals
 
 #Setup software enviroment
 export VIRTUALENV=/var/www/sites/house-led.dev
@@ -20,7 +21,7 @@ sudo chmod 755 /var/www
 echo "Activating uwsgi"
 #uwsgi --ini house_led.ini
 sudo pip install uwsgi
-uwsgi --ini /var/www/sites/house-led.dev/house_led.ini
+uwsgi --emperor /etc/uwsgi/vassals --ini /var/www/sites/house-led.dev/house_led.ini
 
 #Add Vhost entries and enable site
 echo "Resolving web server configs"
