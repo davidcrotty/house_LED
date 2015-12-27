@@ -1,6 +1,6 @@
 #Install software
 sudo apt-get update
-sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev
+sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev libpq-dev postgresql postgresql-contrib
 
 #Create remote dirs
 mkdir /var/log/uwsgi
