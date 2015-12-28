@@ -12,6 +12,7 @@ docutils==0.12
 html5lib==0.999
 ndg-httpsclient==0.3.2
 ply==3.4
+psycopg2==2.6.1
 pyOpenSSL==0.14
 pyasn1==0.1.7
 pycparser==2.10
