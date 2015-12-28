@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'house_led.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'house_led',
+        'USER': 'admin',
+        'PASSWORD': 'rqwrwmC8a2UYqsAg',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

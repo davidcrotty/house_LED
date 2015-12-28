@@ -2,6 +2,9 @@
 sudo apt-get update
 sudo apt-get -y install nginx python-pip python-virtualenv python-setuptools python-dev libpq-dev postgresql postgresql-contrib
 
+#Setup postgres dbms
+sudo -u postgres psql < /vagrant/config/postgres_config.sql
+
 #Create remote dirs
 mkdir /var/log/uwsgi
 mkdir /var/log/uwsgi/vassals
