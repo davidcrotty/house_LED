@@ -8,3 +8,4 @@ www/[Ll]ocal
 www/[Ss]cripts
 www/pyvenv.cfg
 www/pip-selfcheck.json
+*.pyc
