@@ -17,12 +17,14 @@ source $VIRTUALENV/bin/activate
 cd /var/www/sites/house-led.dev
 echo "Virtual env activated"
 pip install -r /var/custom_config_files/requirements.txt
+#Run database migrations
+cd /var/www/sites/house-led.dev/house_led/
+./manage.py migrate
 
 #Assign permissions to nginx user, make web dir public
 sudo chown -R www-data:www-data /var/www/sites/house-led.dev
 sudo chmod 755 /var/www
 echo "Activating uwsgi"
-#uwsgi --ini house_led.ini
 sudo pip install uwsgi
 uwsgi --emperor /etc/uwsgi/vassals --ini /var/www/sites/house-led.dev/house_led.ini
 
