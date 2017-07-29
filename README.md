@@ -1,6 +1,6 @@
 # README #
 
-Web component interface with back-end for sending signals to GPIO's on a raspberry-pi for controlling room lighting.
+Open source web component interface with back-end for sending signals to GPIO's on a raspberry-pi 3 for controlling room lighting.
 
 ### Version ###
 
@@ -29,4 +29,4 @@ The project uses uwsgi and is configured for touch reload to view your code chan
 
 ### Who do I talk to? ###
 
-For further enquiries contact either info@williampreen.me or david.crotty.work@gmail.com
+For further enquiries contact me@davidcrotty.net
