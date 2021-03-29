@@ -1,6 +1,6 @@
 Django==1.9
 Pillow==2.6.1
-Pygments==2.0.1
+Pygments==2.7.4
 SOAPpy==0.12.22
 argparse==1.2.1
 cffi==0.8.6
