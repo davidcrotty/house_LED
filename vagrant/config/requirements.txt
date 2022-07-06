@@ -9,7 +9,7 @@ colorama==0.3.2
 cryptography==0.6.1
 defusedxml==0.4.1
 docutils==0.12
-html5lib==0.999
+html5lib==0.999999999
 ndg-httpsclient==0.3.2
 ply==3.4
 psycopg2==2.6.1
